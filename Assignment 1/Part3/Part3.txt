@@ -1,0 +1,11 @@
+CMSC 312 Assignment 1 Question 3 Response
+Christopher Flippen
+3. Discuss and evaluate what happens when you're running both kirk and spock in separate windows and you kill one or the other:
+
+a. If spock opened first, it fails since the message queue isn't open yet.
+If kirk is killed, spock continues to run since the message queue wasn't closed.
+If spock is killed, kirk continues to run since the message queue is still open. If spock is killed and reopened, any messages sent when it was closed will automatically send when kirk connects.
+
+b. If two kirks are running and one is killed, the remaining kirk and spock will continue to run. If the second spock is reopened after being killed, it will continue to work as normal and can send messages to the queue.
+
+c. If two spocks are running, they will alternate which one receives messages from kirk. This is because they share the same buffer, so only one process gets each message, and they alternate which process gets messages to allow both processes to receive messages. If two buffers were used, then each process would receive its own messages rather than having to alternate. Since all copies of kirk and all copies of spock share the same message queue key, they can all access the same queue.

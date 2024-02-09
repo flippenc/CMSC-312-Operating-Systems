@@ -1,0 +1,287 @@
+CMSC 312 Assignment 3 Christopher Flippen
+Sample Run of the SJF version of the code with 10 producers and 10 consumers:
+[flippenc@cmsc312 Asgn3]$ ./queueSJF 10 10
+10 users and 10 printers
+Initialized full and empty counting semaphores
+Made shared memory segments
+Initialized printer queue
+Entering producer with process 0
+Entering producer with process 1
+Entering producer with process 2
+Entering producer with process 3
+Entering producer with process 4
+Entering producer with process 5
+Entering producer with process 6
+Entering producer with process 7
+Entering producer with process 8
+Made all of the users
+Entering producer with process 9
+Made printer 0
+Made printer 1
+Made printer 2
+Made printer 3
+Made printer 4
+Made printer 5
+Made printer 6
+Made printer 7
+Made printer 8
+Made printer 9
+Made all of the printers
+Producer 1 added 154 to buffer
+Producer 5 added 331 to buffer
+Producer 0 added 617 to buffer
+Producer 2 added 938 to buffer
+Producer 5 added 607 to buffer
+Producer 7 added 662 to buffer
+Producer 6 added 623 to buffer
+Producer 7 added 409 to buffer
+Consumer 0 removed 154 from user: 1
+Producer 9 added 423 to buffer
+Producer 1 added 894 to buffer
+Producer 3 added 517 to buffer
+Closing producer
+Consumer 2 removed 331 from user: 5
+Consumer 7 removed 409 from user: 7
+Producer 8 added 251 to buffer
+Producer 2 added 667 to buffer
+Producer 4 added 137 to buffer
+Consumer 3 removed 607 from user: 5
+Consumer 8 removed 423 from user: 9
+Consumer 4 removed 617 from user: 0
+Consumer 1 removed 623 from user: 6
+Consumer 5 removed 662 from user: 7
+Consumer 2 removed 251 from user: 8
+Consumer 3 removed 137 from user: 4
+Consumer 0 removed 517 from user: 3
+Consumer 6 removed 938 from user: 2
+Producer 4 added 809 to buffer
+Producer 7 added 695 to buffer
+Producer 1 added 524 to buffer
+Consumer 9 removed 894 from user: 1
+Producer 5 added 139 to buffer
+Consumer 7 removed 667 from user: 2
+Consumer 5 removed 139 from user: 5
+Producer 0 added 995 to buffer
+Producer 2 added 617 to buffer
+Producer 6 added 230 to buffer
+Producer 1 added 431 to buffer
+Producer 0 added 247 to buffer
+Consumer 1 removed 524 from user: 1
+Producer 9 added 186 to buffer
+Consumer 0 removed 230 from user: 6
+Consumer 4 removed 695 from user: 7
+Consumer 8 removed 809 from user: 4
+Consumer 9 removed 247 from user: 0
+Producer 7 added 135 to buffer
+Consumer 7 removed 186 from user: 9
+Consumer 6 removed 431 from user: 1
+Consumer 5 removed 135 from user: 7
+Consumer 3 removed 617 from user: 2
+Producer 7 added 925 to buffer
+Producer 5 added 466 to buffer
+Producer 5 added 992 to buffer
+Producer 7 added 162 to buffer
+Producer 2 added 200 to buffer
+Closing producer
+Consumer 2 removed 995 from user: 0
+Producer 8 added 432 to buffer
+Producer 4 added 466 to buffer
+Consumer 8 removed 162 from user: 7
+Consumer 9 removed 200 from user: 2
+Consumer 0 removed 466 from user: 5
+Consumer 7 removed 432 from user: 8
+Producer 9 added 802 to buffer
+Consumer 6 removed 466 from user: 4
+Producer 6 added 247 to buffer
+Consumer 1 removed 925 from user: 7
+Consumer 4 removed 992 from user: 5
+Consumer 3 removed 247 from user: 6
+Producer 4 added 981 to buffer
+Producer 1 added 697 to buffer
+Producer 0 added 734 to buffer
+Consumer 5 removed 802 from user: 9
+Producer 0 added 985 to buffer
+Producer 5 added 172 to buffer
+Consumer 7 removed 172 from user: 5
+Producer 0 added 407 to buffer
+Producer 8 added 257 to buffer
+Closing producer
+Consumer 8 removed 697 from user: 1
+Producer 1 added 931 to buffer
+Producer 7 added 396 to buffer
+Consumer 9 removed 734 from user: 0
+Consumer 6 removed 407 from user: 0
+Producer 1 added 873 to buffer
+Consumer 2 removed 981 from user: 4
+Consumer 1 removed 257 from user: 8
+Producer 5 added 752 to buffer
+Producer 4 added 875 to buffer
+Consumer 0 removed 985 from user: 0
+Consumer 3 removed 396 from user: 7
+Producer 4 added 336 to buffer
+Producer 0 added 398 to buffer
+Producer 5 added 611 to buffer
+Producer 9 added 181 to buffer
+Producer 9 added 508 to buffer
+Closing producer
+Consumer 9 removed 336 from user: 4
+Producer 6 added 486 to buffer
+Consumer 1 removed 181 from user: 9
+Consumer 6 removed 398 from user: 0
+Consumer 4 removed 931 from user: 1
+Consumer 5 removed 873 from user: 1
+Consumer 7 removed 752 from user: 5
+Producer 1 added 608 to buffer
+Consumer 0 removed 508 from user: 9
+Consumer 2 removed 611 from user: 5
+Consumer 8 removed 875 from user: 4
+Consumer 3 removed 486 from user: 6
+Producer 7 added 735 to buffer
+Producer 1 added 864 to buffer
+Producer 6 added 463 to buffer
+Consumer 9 removed 608 from user: 1
+Producer 1 added 388 to buffer
+Producer 5 added 716 to buffer
+Producer 4 added 313 to buffer
+Producer 7 added 335 to buffer
+Consumer 4 removed 463 from user: 6
+Consumer 1 removed 735 from user: 7
+Consumer 5 removed 388 from user: 1
+Consumer 0 removed 313 from user: 4
+Consumer 2 removed 335 from user: 7
+Producer 0 added 619 to buffer
+Consumer 6 removed 864 from user: 1
+Producer 1 added 722 to buffer
+Consumer 7 removed 716 from user: 5
+Producer 6 added 177 to buffer
+Producer 4 added 100 to buffer
+Consumer 9 removed 177 from user: 6
+Consumer 4 removed 100 from user: 4
+Producer 7 added 870 to buffer
+Closing producer
+Producer 1 added 525 to buffer
+Consumer 8 removed 619 from user: 0
+Producer 0 added 976 to buffer
+Producer 5 added 929 to buffer
+Consumer 3 removed 722 from user: 1
+Producer 5 added 699 to buffer
+Consumer 5 removed 525 from user: 1
+Producer 5 added 266 to buffer
+Producer 6 added 990 to buffer
+Consumer 1 removed 870 from user: 7
+Producer 1 added 203 to buffer
+Consumer 7 removed 266 from user: 5
+Producer 5 added 171 to buffer
+Consumer 0 removed 976 from user: 0
+Consumer 4 removed 203 from user: 1
+Producer 6 added 714 to buffer
+Closing producer
+Consumer 6 removed 699 from user: 5
+Consumer 8 removed 171 from user: 5
+Consumer 2 removed 929 from user: 5
+Producer 4 added 759 to buffer
+Producer 0 added 739 to buffer
+Consumer 9 removed 990 from user: 6
+Consumer 3 removed 714 from user: 6
+Producer 1 added 618 to buffer
+Consumer 5 removed 759 from user: 4
+Producer 0 added 354 to buffer
+Producer 4 added 853 to buffer
+Producer 1 added 527 to buffer
+Consumer 1 removed 739 from user: 0
+Consumer 0 removed 354 from user: 0
+Consumer 7 removed 618 from user: 1
+Consumer 6 removed 527 from user: 1
+Producer 4 added 406 to buffer
+Producer 5 added 865 to buffer
+Consumer 4 removed 853 from user: 4
+Consumer 8 removed 406 from user: 4
+Producer 1 added 843 to buffer
+Producer 5 added 491 to buffer
+Producer 5 added 995 to buffer
+Consumer 2 removed 865 from user: 5
+Consumer 3 removed 491 from user: 5
+Producer 1 added 768 to buffer
+Producer 4 added 960 to buffer
+Producer 5 added 840 to buffer
+Producer 0 added 519 to buffer
+Consumer 9 removed 843 from user: 1
+Producer 4 added 252 to buffer
+Producer 5 added 538 to buffer
+Consumer 5 removed 995 from user: 5
+Consumer 4 removed 252 from user: 4
+Consumer 6 removed 519 from user: 0
+Producer 4 added 694 to buffer
+Consumer 1 removed 768 from user: 1
+Producer 0 added 195 to buffer
+Consumer 8 removed 538 from user: 5
+Consumer 7 removed 840 from user: 5
+Consumer 0 removed 960 from user: 4
+Producer 1 added 733 to buffer
+Consumer 3 removed 195 from user: 0
+Consumer 2 removed 694 from user: 4
+Producer 0 added 136 to buffer
+Consumer 5 removed 136 from user: 0
+Consumer 9 removed 733 from user: 1
+Producer 0 added 653 to buffer
+Producer 4 added 358 to buffer
+Producer 5 added 858 to buffer
+Producer 0 added 540 to buffer
+Consumer 6 removed 358 from user: 4
+Consumer 4 removed 653 from user: 0
+Producer 4 added 641 to buffer
+Consumer 8 removed 540 from user: 0
+Producer 1 added 817 to buffer
+Closing producer
+Consumer 1 removed 858 from user: 5
+Consumer 7 removed 641 from user: 4
+Producer 4 added 363 to buffer
+Producer 5 added 305 to buffer
+Consumer 0 removed 817 from user: 1
+Consumer 3 removed 363 from user: 4
+Consumer 2 removed 305 from user: 5
+Producer 0 added 584 to buffer
+Producer 0 added 281 to buffer
+Producer 5 added 904 to buffer
+Consumer 9 removed 281 from user: 0
+Producer 0 added 743 to buffer
+Consumer 5 removed 584 from user: 0
+Producer 4 added 401 to buffer
+Consumer 6 removed 904 from user: 5
+Consumer 4 removed 743 from user: 0
+Consumer 8 removed 401 from user: 4
+Producer 5 added 171 to buffer
+Producer 5 added 262 to buffer
+Closing producer
+Consumer 1 removed 171 from user: 5
+Consumer 7 removed 262 from user: 5
+Producer 0 added 533 to buffer
+Producer 4 added 949 to buffer
+Consumer 0 removed 533 from user: 0
+Producer 0 added 301 to buffer
+Consumer 3 removed 949 from user: 4
+Consumer 2 removed 301 from user: 0
+Producer 4 added 173 to buffer
+Closing producer
+Consumer 9 removed 173 from user: 4
+Producer 0 added 170 to buffer
+Consumer 5 removed 170 from user: 0
+Producer 0 added 796 to buffer
+Consumer 6 removed 796 from user: 0
+Producer 0 added 423 to buffer
+Consumer 4 removed 423 from user: 0
+Producer 0 added 661 to buffer
+Consumer 8 removed 661 from user: 0
+Producer 0 added 711 to buffer
+Producer 0 added 322 to buffer
+Consumer 7 removed 322 from user: 0
+Consumer 1 removed 711 from user: 0
+Producer 0 added 967 to buffer
+Closing producer
+Consumer 0 removed 967 from user: 0
+SIGINT received, killing
+Closing semaphore shared memory
+Closing total num jobs shared memory
+Closing printer queue
+Time elapsed is 28.819789 seconds
+Terminated
